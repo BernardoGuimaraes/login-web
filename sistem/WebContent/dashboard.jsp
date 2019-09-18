@@ -1,3 +1,4 @@
+<%@page import="br.ucsal.sistem.model.Usuario" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -8,7 +9,8 @@
 </head>
 <body>
  <div>
- <%="Bem Vindo" %>
+ <%Usuario usuario= (Usuario) request.getAttribute("usuario"); %>
+ <%="Bem Vindo"+usuario.getLogin()+"!" %>
  </div>
 </body>
 </html>
