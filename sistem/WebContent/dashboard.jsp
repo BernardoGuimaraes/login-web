@@ -9,8 +9,8 @@
 </head>
 <body>
  <div>
- <%Usuario usuario= (Usuario) request.getAttribute("usuario"); %>
- <%="Bem Vindo"+usuario.getLogin()+"!" %>
+ <%Usuario user= (Usuario) request.getAttribute("user"); %>
+ <%="Bem Vindo"+user.getLogin()+"!" %>
  </div>
 </body>
 </html>
