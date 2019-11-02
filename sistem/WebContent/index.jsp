@@ -9,7 +9,7 @@
 <body>
 	<div>
 		<form action="LoginServlet" method="post">
-		Usuario: <input name="usuario" type="text" ><br>
+		Login: <input name="login" type="text" ><br>
   		Senha:<input name="senha" type="password" ><br>
   <button type="submit">Enviar</button>
   <%if(request.getParameter("error")!=null){%>
