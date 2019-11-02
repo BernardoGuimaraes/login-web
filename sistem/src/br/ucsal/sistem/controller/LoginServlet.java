@@ -51,7 +51,7 @@ public class LoginServlet extends HttpServlet {
 		user.setSenha(senha);
 
 		if (this.autenticado(user)) {
-			request.setAttribute("usuario", user);
+			request.setAttribute("user", user);
 			RequestDispatcher dispatcher = request.getRequestDispatcher("dashboard.jsp");
 			dispatcher.forward(request, response);
 		} else {
