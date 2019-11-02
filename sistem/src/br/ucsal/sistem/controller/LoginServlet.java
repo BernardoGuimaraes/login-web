@@ -44,11 +44,11 @@ public class LoginServlet extends HttpServlet {
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
-		String login = request.getParameter("login");
+		String usuario = request.getParameter("usuario");
 		String senha = request.getParameter("senha");
 
 		Usuario user = new Usuario();
-		user.setLogin(login);
+		user.setLogin(usuario);
 		user.setSenha(senha);
 
 		if (this.autenticado(user)) {
