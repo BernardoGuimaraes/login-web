@@ -1,7 +1,8 @@
+package br.ucsal.sistem.banco;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-
+import java.sql.DriverManager;
 public class BancoUtil {
 	private static Connection connection;
 	static {
